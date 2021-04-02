@@ -1,13 +1,11 @@
 import React from 'react';
 import './UserOutput.css';
 
-const userOutput = props => {
+const userOutput = (props) => {
     return (
-        <div>
-            <h1 className='UserOutput'>{props.username}</h1>
-            <p className='UserOutput'>{props.stateUsername}</p>
-            <p className='UserOutput'>Blue Supergiant</p>
-            <p className='UserOutput'>Red Supergiant</p>
+        <div className='UserOutput'>
+            <h1>Name: {props.username}</h1>
+            <p>Username: {props.stateUsername}</p>
         </div>
     );
 };
